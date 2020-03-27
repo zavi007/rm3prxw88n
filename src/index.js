@@ -15,7 +15,10 @@ const historyStates = {
 
 const noop = () => {}
 
-const sdk = debug(init({ license: 1520, clientId: 'f00fe5accb58ae5e9490b70bc1a0fee5' }))
+const licenseId = 11799975
+const clientId = '42c2420691061f3f65d9a44099955866'
+
+const sdk = debug(init({ licenseId, clientId }))
 window.sdk = sdk
 
 const state = {
